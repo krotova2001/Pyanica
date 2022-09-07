@@ -46,7 +46,7 @@ namespace Pyanica
                     Tolya.Vzyat(temp1);
                     Tolya.Vzyat(temp2);
                 }
-                if (temp2 > temp1)
+                if (temp2 > temp1) // Либо Вася побеждает в это ходе
                 {
                     Console.WriteLine("Вася берет");
                     Vasya.Vzyat(temp1);
@@ -58,7 +58,6 @@ namespace Pyanica
                     Console.WriteLine("Карты равны");
                     continue;
                 }
-                
             }
             while (Vasya.Is_alive()||Tolya.Is_alive()); // пока хоть кто-то не выйграет, делаем ходы)
             
